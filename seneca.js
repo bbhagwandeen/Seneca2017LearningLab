@@ -12,7 +12,7 @@ exports.isValidEmail = function (email) {
   switch (typeof email) {
         /* if email is string and has a leading whitespace character,
          return false.
-         if email is string and contains "myseneca.ca 
+         if email is string and contains 'myseneca.ca'
          senecacollege.ca or senecacollege.on.ca" then
          return true.
          if the email is null, then error out
