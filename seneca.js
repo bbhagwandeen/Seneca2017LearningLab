@@ -10,12 +10,13 @@ exports.isValidEmail = function (email) {
     // of the variables being sent to the isValidEmail function
     // and will return values to seneca.test.js
   switch (typeof email) {
-        // if email is string and has a leading whitespace character,
-        // return false.
-        // if email is string and contains "myseneca.ca, 
-        // senecacollege.ca or senecacollege.on.ca" then
-        // return true.
-        // if the email is null, then error out
+        /* if email is string and has a leading whitespace character,
+         return false.
+         if email is string and contains "myseneca.ca 
+         senecacollege.ca or senecacollege.on.ca" then
+         return true.
+         if the email is null, then error out
+         */
     case 'string':
       if (/\s/.test(email)) {
         return false;
